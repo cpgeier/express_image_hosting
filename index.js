@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.send("WWO!");
 });
 
+app.get('/wow.jpg', (req, res) => {
+    res.sendFile("/wow.jpg");
+});
+
 http.listen(port, () => {
     console.log(`Listening on *:${port}`);
 });
